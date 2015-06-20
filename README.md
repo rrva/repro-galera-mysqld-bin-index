@@ -5,10 +5,9 @@ is needed for fabric driving the test.
 If using docker, docker container IP addresses must be reachable from the host
 running the test for ssh access.
 
-setup_env.sh            Builds a docker image and sets up a python virtualenv
-                        for fabric
-start_containers.sh     Starts containers and runs the fabric scripts which 
-                        reproduce the bug
+setup_env.sh          Builds a docker image and sets up a python virtualenv for fabric
+
+start_containers.sh   Starts containers and runs the fabric scripts which reproduce the bug
 
 The fabric script can probably be simplified but it is still reasonably small.
 
