@@ -1,3 +1,2 @@
 docker build -t galera-repro .
-virtualenv env
-./env/bin/pip install -r requirements.txt
+docker build -t galera-repro-fab -f Dockerfile.fab .

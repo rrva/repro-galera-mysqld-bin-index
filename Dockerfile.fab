@@ -1,0 +1,8 @@
+FROM python:2
+RUN mkdir /w
+WORKDIR /w
+RUN virtualenv env 
+ADD template /w/template
+ADD requirements.txt /w/requirements.txt
+ADD fabfile.py /w/fabfile.py
+RUN env/bin/pip install -r requirements.txt
