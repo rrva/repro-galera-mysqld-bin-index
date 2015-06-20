@@ -72,8 +72,8 @@ def bootstrap_cluster():
 
         env['first_db_node_started'] = env.host_string
     else:
-        sudo("service mysql restart || "
-             "service mysql restart --wsrep-provider-options='pc.npvo=true'")
+        sudo("service mysql start || "
+             "service mysql start --wsrep-provider-options='pc.npvo=true'")
         wait_until_node_synced()
 
 
