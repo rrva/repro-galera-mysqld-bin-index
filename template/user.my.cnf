@@ -1,0 +1,11 @@
+[mysql]
+user     = root
+password = %(password)s
+
+[mysqladmin]
+user     = root
+password = %(password)s
+
+[mysqldump]
+user     = root
+password = %(password)s
