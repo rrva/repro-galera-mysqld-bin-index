@@ -1,9 +1,6 @@
 Requires docker. Can be reproduced on a normal RHEL/Centos
 6.5 x86_64 host with ssh access, but including this for completeness.
 
-If using docker, docker container IP addresses must be reachable from the host
-running the test for ssh access.
-
 setup_env.sh          Builds two docker images: galera-repro and galera-repro-fab
 
 start_containers.sh   Starts containers and runs the fabric scripts which reproduce the bug
